@@ -32,4 +32,13 @@
 
 .button {
   composes: primary-button from '../../styles/common.module.css';
+  width: 240px;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    top: 15%;
+    left: 20%;
+    width: 70%;
+  }
 }
