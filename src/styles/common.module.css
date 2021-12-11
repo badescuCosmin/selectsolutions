@@ -1,0 +1,17 @@
+.primary-button {
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  height: 44px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px 0 rgba(15, 24, 38, 0.15);
+}
+
+.primary-button:hover {
+  background-color: var(--color-primary-dark);
+}

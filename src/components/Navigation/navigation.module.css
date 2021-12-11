@@ -1,0 +1,63 @@
+.root {
+  background-color: var(--color-secondary);
+  color: var(--white-color);
+  height: 70px;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navigationItem {
+  list-style: none;
+  cursor: pointer;
+}
+.navigationItem:hover {
+  color: var(--color-primary);
+}
+.navigationItem:not(:last-child) {
+  display: block;
+  margin-right: 40px;
+}
+
+.cross {
+  height: 30px;
+  font-size: 15px;
+}
+
+.mobileNavigation {
+  background-color: var(--color-secondary);
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 70px;
+  transition: width 0.3s ease-in-out;
+  width: 0%;
+  color: var(--white-color);
+}
+
+.hamburgerLine {
+  width: 30px;
+  height: 2px;
+  background-color: var(--white-color);
+  margin: 6px 0;
+}
+
+.showMobileNav {
+  transition: width 0.3s ease-in-out;
+  width: 100%;
+  z-index: 110;
+  display: block;
+}
+
+.mobileNavigationItem {
+  composes: navigationItem;
+  margin-top: 30px;
+}
+
+.closeSign {
+  position: absolute;
+  right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  top: 30px;
+}

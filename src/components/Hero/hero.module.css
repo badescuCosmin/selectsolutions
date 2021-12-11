@@ -1,2 +1,35 @@
 .root {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('../../static/svg/hero.jpg');
+  height: 80vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-20%, 0);
+  width: 30%;
+}
+
+.header {
+  color: var(--white-color);
+  font-family: var(--secondary-font);
+  line-height: 40px;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.button {
+  composes: primary-button from '../../styles/common.module.css';
 }

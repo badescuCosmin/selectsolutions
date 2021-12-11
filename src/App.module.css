@@ -7,4 +7,5 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: var(--primary-font);
+  background-color: var(--color-grey-light-1);
 }
