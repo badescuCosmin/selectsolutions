@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/selectsolutions/static/css/main.c40439f9.chunk.css",
-    "main.js": "/selectsolutions/static/js/main.bd5b09e6.chunk.js",
-    "main.js.map": "/selectsolutions/static/js/main.bd5b09e6.chunk.js.map",
-    "runtime-main.js": "/selectsolutions/static/js/runtime-main.fcf27425.js",
-    "runtime-main.js.map": "/selectsolutions/static/js/runtime-main.fcf27425.js.map",
+    "main.css": "/selectsolutions/static/css/main.dcb7d8cf.chunk.css",
+    "main.js": "/selectsolutions/static/js/main.b46b5f24.chunk.js",
+    "main.js.map": "/selectsolutions/static/js/main.b46b5f24.chunk.js.map",
+    "runtime-main.js": "/selectsolutions/static/js/runtime-main.a08caa3b.js",
+    "runtime-main.js.map": "/selectsolutions/static/js/runtime-main.a08caa3b.js.map",
     "static/css/2.761a18f7.chunk.css": "/selectsolutions/static/css/2.761a18f7.chunk.css",
-    "static/js/2.178f5fc8.chunk.js": "/selectsolutions/static/js/2.178f5fc8.chunk.js",
-    "static/js/2.178f5fc8.chunk.js.map": "/selectsolutions/static/js/2.178f5fc8.chunk.js.map",
-    "static/js/3.5b47b64d.chunk.js": "/selectsolutions/static/js/3.5b47b64d.chunk.js",
-    "static/js/3.5b47b64d.chunk.js.map": "/selectsolutions/static/js/3.5b47b64d.chunk.js.map",
+    "static/js/2.4301b780.chunk.js": "/selectsolutions/static/js/2.4301b780.chunk.js",
+    "static/js/2.4301b780.chunk.js.map": "/selectsolutions/static/js/2.4301b780.chunk.js.map",
+    "static/js/3.4c026dfa.chunk.js": "/selectsolutions/static/js/3.4c026dfa.chunk.js",
+    "static/js/3.4c026dfa.chunk.js.map": "/selectsolutions/static/js/3.4c026dfa.chunk.js.map",
     "index.html": "/selectsolutions/index.html",
     "static/css/2.761a18f7.chunk.css.map": "/selectsolutions/static/css/2.761a18f7.chunk.css.map",
-    "static/css/main.c40439f9.chunk.css.map": "/selectsolutions/static/css/main.c40439f9.chunk.css.map",
-    "static/js/2.178f5fc8.chunk.js.LICENSE.txt": "/selectsolutions/static/js/2.178f5fc8.chunk.js.LICENSE.txt",
+    "static/css/main.dcb7d8cf.chunk.css.map": "/selectsolutions/static/css/main.dcb7d8cf.chunk.css.map",
+    "static/js/2.4301b780.chunk.js.LICENSE.txt": "/selectsolutions/static/js/2.4301b780.chunk.js.LICENSE.txt",
     "static/media/fonts.module.css": "/selectsolutions/static/media/PTSerif-Regular.322d97f9.ttf",
+    "static/media/about.11569566.jpg": "/selectsolutions/static/media/about.11569566.jpg",
     "static/media/hero.module.css": "/selectsolutions/static/media/hero.5eea975c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fcf27425.js",
+    "static/js/runtime-main.a08caa3b.js",
     "static/css/2.761a18f7.chunk.css",
-    "static/js/2.178f5fc8.chunk.js",
-    "static/css/main.c40439f9.chunk.css",
-    "static/js/main.bd5b09e6.chunk.js"
+    "static/js/2.4301b780.chunk.js",
+    "static/css/main.dcb7d8cf.chunk.css",
+    "static/js/main.b46b5f24.chunk.js"
   ]
 }
