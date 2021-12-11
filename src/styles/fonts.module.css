@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('../static/fonts/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../static/fonts/PTSerif-Regular.ttf');
+}
