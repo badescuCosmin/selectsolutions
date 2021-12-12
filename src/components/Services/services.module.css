@@ -1,59 +1,44 @@
-.root {
-  background-color: var(--color-secondary);
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0 20%, 100% 0%, 100% 65%, 0 86%);
-  position: relative;
-  margin-top: 10rem;
+.cardsHolder {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 200px;
-  height: 90vh;
-}
-
-.title {
-  color: var(--color-grey-light-1);
-  text-align: center;
-  font-size: 2.5rem;
-}
-.cardsWrapper {
-  margin-top: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+  justify-content: center;
 }
 
 .card {
-  color: var(--white-color);
-  margin-right: 50px;
-  width: 200px;
-  text-align: center;
-  border: 1px solid var(--color-grey-light-2);
-  padding: 30px 15px;
+  width: 250px;
+  box-shadow: 0 2px 20px 0 rgba(15, 24, 38, 0.1);
+  height: 370px;
   border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  border: 1px solid transparent;
+}
+
+.cardImg {
+  width: 100%;
+  height: 150px;
 }
 
 .cardTitle {
-  font-size: 1.5rem;
-  color: var(--color-primary);
-  font-weight: 500;
   font-family: var(--secondary-font);
-  letter-spacing: 1px;
-  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
-@media (max-width: 992px) {
-  .cardsWrapper {
-    flex-direction: column;
-  }
-  .root {
-    clip-path: none;
-    padding-top: 50px;
-    height: 100%;
-  }
-  .card {
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 15px 7px;
-  }
+.cardDescription {
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 20px;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect, useEffect } from 'react';
 import styles from './navigation.module.css';
+import { Link } from 'react-scroll'
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -29,7 +30,7 @@ const Navigation = () => {
     },
     {
       id: 'services',
-      name: 'Services'
+      name: 'Services',
     },
     {
       id: 'contact',
@@ -43,7 +44,9 @@ const Navigation = () => {
           <span>Logo</span>
           <ul className='d-flex m-0 d-none d-md-flex '>
             {navigationOptions.map(({ id, name }) => (
-              <li className={styles.navigationItem} key={id}>{name}</li>
+              <li className={styles.navigationItem} key={id}>
+                <Link activeClass="active" to="about" spy={true}>{name}</Link>
+              </li>
             ))}
           </ul>
           {!showMobileNav

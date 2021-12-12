@@ -1,38 +1,65 @@
-import React from 'react';
+import React from "react";
 import styles from './services.module.css';
+import withTitleContainer from "../../hoc/withTitleComponent";
+import rooftingImg from '../../static/svg/service1.jpg';
+import greenBuildingImg from '../../static/svg/service2.jpg';
+import constructionConsultantImg from '../../static/svg/service3.jpg';
+import generalContractionImg from '../../static/svg/service4.jpg';
+import constructionManagement from '../../static/svg/service5.jpg';
+import houseRenovationImg from '../../static/svg/service6.jpg';
 
 const Services = () => {
-  const options = [
+  const services = [
     {
-      id: '1',
-      name: 'Passionate'
+      id: 'roofting',
+      name: 'Metal Roofting',
+      img: rooftingImg,
+      description: 'Construction offer you the best in metal roofing services, supplies and materials to help protect one of your biggest investments you will ever make, your home.'
     },
     {
-      id: '2',
-      name: 'Dependable'
+      id: 'grenn_building',
+      name: 'Green Building',
+      img: greenBuildingImg,
+      description: 'By choosing to build green, you are making an effort to reduce the burden on the environment and also add value to your home.'
     },
     {
-      id: '3',
-      name: 'Honest'
+      id: 'construction_Consultant',
+      name: 'Construction Consultant',
+      img: constructionConsultantImg,
+      description: 'this is a short description'
     },
     {
-      id: '4',
-      name: 'Friendly'
+      id: 'general_contracting',
+      name: 'General Contracting',
+      img: generalContractionImg,
+      description: 'this is a short description'
+    },
+    {
+      id: 'construction_management',
+      name: 'Construction Management',
+      img: constructionManagement,
+      description: 'this is a short description'
+    },
+    {
+      id: 'house_renovation',
+      name: 'House Renovation',
+      img: houseRenovationImg,
+      description: 'this is a short description'
     }
   ]
   return (
-    <div className={styles.root}>
-      <h3 className={styles.title}>Why choose us?</h3>
-      <div className={`d-flex ${styles.cardsWrapper}`}>
-        {options.map(({ id, name }) => (
-          <div
-            className={styles.card}
-            data-aos="fade-up"
-            data-aos-easing="ease-in"
-            key={id}
+    <div className="container">
+      <div className={styles.cardsHolder}>
+        {services.map(({ id, name, img, description }, i) => (
+          <div key={id} className={styles.card}
+            data-aos="fade"
+            data-aos-easing="linear"
+            data-aos-delay={i * 150}
+            data-aos-once={true}
           >
-            <p className={styles.cardTitle}>{name}</p>
-            <span>this is a short description</span>
+            <img src={img} alt='card_img' className={styles.cardImg} />
+            <h4 className={styles.cardTitle}>{name}</h4>
+            <p className={styles.cardDescription}>{description}</p>
           </div>
         ))}
       </div>
@@ -40,4 +67,4 @@ const Services = () => {
   )
 };
 
-export default Services;
+export default withTitleContainer(Services);
