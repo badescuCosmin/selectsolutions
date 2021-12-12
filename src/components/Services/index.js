@@ -48,7 +48,7 @@ const Services = () => {
     }
   ]
   return (
-    <div className="container">
+    <div className="container p-0">
       <div className={styles.cardsHolder}>
         {services.map(({ id, name, img, description }, i) => (
           <div key={id} className={styles.card}
