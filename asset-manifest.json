@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/selectsolutions/static/css/main.97eb387f.chunk.css",
-    "main.js": "/selectsolutions/static/js/main.74a3824c.chunk.js",
-    "main.js.map": "/selectsolutions/static/js/main.74a3824c.chunk.js.map",
+    "main.css": "/selectsolutions/static/css/main.a9cd3ff5.chunk.css",
+    "main.js": "/selectsolutions/static/js/main.4e7a5f86.chunk.js",
+    "main.js.map": "/selectsolutions/static/js/main.4e7a5f86.chunk.js.map",
     "runtime-main.js": "/selectsolutions/static/js/runtime-main.e0b8ba24.js",
     "runtime-main.js.map": "/selectsolutions/static/js/runtime-main.e0b8ba24.js.map",
     "static/css/2.761a18f7.chunk.css": "/selectsolutions/static/css/2.761a18f7.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.c48dcdff.chunk.js.map": "/selectsolutions/static/js/3.c48dcdff.chunk.js.map",
     "index.html": "/selectsolutions/index.html",
     "static/css/2.761a18f7.chunk.css.map": "/selectsolutions/static/css/2.761a18f7.chunk.css.map",
-    "static/css/main.97eb387f.chunk.css.map": "/selectsolutions/static/css/main.97eb387f.chunk.css.map",
+    "static/css/main.a9cd3ff5.chunk.css.map": "/selectsolutions/static/css/main.a9cd3ff5.chunk.css.map",
     "static/js/2.d87aefef.chunk.js.LICENSE.txt": "/selectsolutions/static/js/2.d87aefef.chunk.js.LICENSE.txt",
     "static/media/fonts.module.css": "/selectsolutions/static/media/PTSerif-Regular.322d97f9.ttf",
     "static/media/about.11569566.jpg": "/selectsolutions/static/media/about.11569566.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.e0b8ba24.js",
     "static/css/2.761a18f7.chunk.css",
     "static/js/2.d87aefef.chunk.js",
-    "static/css/main.97eb387f.chunk.css",
-    "static/js/main.74a3824c.chunk.js"
+    "static/css/main.a9cd3ff5.chunk.css",
+    "static/js/main.4e7a5f86.chunk.js"
   ]
 }
