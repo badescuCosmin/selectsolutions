@@ -42,7 +42,7 @@ const Contact = () => {
       </div>
       <div className={styles.rootMessage}>
         <h2>Say Something</h2>
-        <Form target="_blank" action="https://formsubmit.co/testiniocos@gmail.com" method="POST" >
+        <Form method="POST" action="https://formsubmit.co/testiniocos@gmail.com" enctype="multipart/form-data">
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Name</Form.Label>
             <Form.Control name="name" type="text" placeholder="Full name" />
@@ -54,9 +54,13 @@ const Contact = () => {
               We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>job title</Form.Label>
+            <Form.Control name="job title" type="text" placeholder="Full name" />
+          </Form.Group>
           <Form.Group controlId="formFileSm" className="mb-3">
             <Form.Label>Small file input example</Form.Label>
-            <Form.Control name="attachment" accept="image/png, image/jpeg" type="file" />
+            <Form.Control type="file" name="attachment" accept="image/png, image/jpeg" />
           </Form.Group>
           <button type='submit'>Send</button>
         </Form>
