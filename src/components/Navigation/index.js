@@ -26,16 +26,24 @@ const Navigation = () => {
   const navigationOptions = [
     {
       id: 'about',
-      name: 'About'
+      name: 'About',
+      to: 'about'
     },
     {
       id: 'services',
       name: 'Services',
+      to: 'services'
+    },
+    {
+      id: 'gallery',
+      name: 'Gallery',
+      to: 'gallery'
     },
     {
       id: 'contact',
-      name: 'Contact'
-    },
+      name: 'Contact',
+      to: 'contact'
+    }
   ]
   return (
     <>
@@ -43,9 +51,9 @@ const Navigation = () => {
         <nav className={`container d-flex justify-content-between px-4 ${styles.navigation}`}>
           <span>Logo</span>
           <ul className='d-flex m-0 d-none d-md-flex '>
-            {navigationOptions.map(({ id, name }) => (
+            {navigationOptions.map(({ id, name, to }) => (
               <li className={styles.navigationItem} key={id}>
-                <Link activeClass="active" to="about" spy={true}>{name}</Link>
+                <Link activeClass={styles.active} to={to} spy={true}>{name}</Link>
               </li>
             ))}
           </ul>

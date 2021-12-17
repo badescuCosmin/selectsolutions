@@ -1,12 +1,12 @@
 import React from "react";
 import styles from './services.module.css';
-import withTitleContainer from "../../hoc/withTitleComponent";
 import rooftingImg from '../../static/svg/service1.jpg';
 import greenBuildingImg from '../../static/svg/service2.jpg';
 import constructionConsultantImg from '../../static/svg/service3.jpg';
 import generalContractionImg from '../../static/svg/service4.jpg';
 import constructionManagement from '../../static/svg/service5.jpg';
 import houseRenovationImg from '../../static/svg/service6.jpg';
+import Title from "../Title";
 
 const Services = () => {
   const services = [
@@ -48,7 +48,8 @@ const Services = () => {
     }
   ]
   return (
-    <div className="container p-0">
+    <div id='services' className="container p-0">
+      <Title title='Services' />
       <div className={styles.cardsHolder}>
         {services.map(({ id, name, img, description }, i) => (
           <div key={id} className={styles.card}
@@ -57,7 +58,6 @@ const Services = () => {
             data-aos-delay={i * 150}
             data-aos-once={true}
           >
-            <img src={img} alt='card_img' className={styles.cardImg} />
             <h4 className={styles.cardTitle}>{name}</h4>
             <p className={styles.cardDescription}>{description}</p>
           </div>
@@ -67,4 +67,4 @@ const Services = () => {
   )
 };
 
-export default withTitleContainer(Services);
+export default Services;

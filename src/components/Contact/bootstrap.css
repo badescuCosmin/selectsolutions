@@ -1,0 +1,9 @@
+.form-control:focus,
+.form-control:active {
+  border: 2px solid var(--color-primary) !important;
+  box-shadow: none !important;
+}
+
+.form-control {
+  border: 2px solid var(--color-grey-light-2) !important;
+}

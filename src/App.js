@@ -5,6 +5,7 @@ import Charactersitics from './components/Characteristics';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -17,6 +18,7 @@ function App() {
       <About title='About us' />
       <Charactersitics />
       <Services title='Services' />
+      <Gallery title='Gallery' />
       <Contact title='Get in touch' />
       <Footer />
     </div>

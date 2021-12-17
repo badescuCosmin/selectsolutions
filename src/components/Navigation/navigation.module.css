@@ -22,9 +22,7 @@
   text-decoration: none;
   color: var(--white-color);
 }
-.active {
-  background-color: red;
-}
+
 .navigationItem:not(:last-child) {
   display: block;
   margin-right: 40px;

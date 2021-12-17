@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './about.module.css';
-import AboutImage from '../../static/svg/about.jpg';
-import withTitleContainer from '../../hoc/withTitleComponent';
+import AboutImage from '../../static/svg/about1.jpg';
 
+import Title from '../Title';
 const About = () => {
   return (
     <div id="about">
+      <Title title='About' />
       <div className='container p-0 d-flex align-items-center flex-column  flex-md-row'>
         <img
           className='mx-5'
@@ -28,4 +29,4 @@ const About = () => {
   )
 };
 
-export default withTitleContainer(About);
+export default About;
