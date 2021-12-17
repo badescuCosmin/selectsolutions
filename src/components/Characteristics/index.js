@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './characteristics.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckDouble as faCheckDouble } from '@fortawesome/free-solid-svg-icons'
+import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 
 const Charactersitics = () => {
   const options = [
