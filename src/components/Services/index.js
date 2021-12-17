@@ -7,6 +7,8 @@ import generalContractionImg from '../../static/svg/service4.jpg';
 import constructionManagement from '../../static/svg/service5.jpg';
 import houseRenovationImg from '../../static/svg/service6.jpg';
 import Title from "../Title";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCertificate } from '@fortawesome/free-solid-svg-icons'
 
 const Services = () => {
   const services = [
@@ -52,14 +54,14 @@ const Services = () => {
       <Title title='Services' />
       <div className={styles.cardsHolder}>
         {services.map(({ id, name, img, description }, i) => (
-          <div key={id} className={styles.card}
-            data-aos="fade"
-            data-aos-easing="linear"
-            data-aos-delay={i * 150}
-            data-aos-once={true}
+          <div key={id} className={styles.service}
           >
-            <h4 className={styles.cardTitle}>{name}</h4>
-            <p className={styles.cardDescription}>{description}</p>
+            <div className="d-flex align-items-center">
+              <FontAwesomeIcon icon={faCertificate} color='#c69963' size='1x' />
+              <h4 className={styles.title}>{name}</h4>
+            </div>
+
+            <p className={styles.description}>{description}</p>
           </div>
         ))}
       </div>

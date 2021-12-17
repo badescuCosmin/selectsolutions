@@ -31,7 +31,7 @@ const Contact = () => {
     }
   ]
   return (
-    <div id='contact'>
+    <div id='contact' className={styles.wrapper}>
       <Title title='Contact' />
       <div className={`container mb-5 d-flex justify-content-between align-center ${styles.wrapper}`}>
         <div className={styles.rootContact}>

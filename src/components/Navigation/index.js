@@ -69,8 +69,10 @@ const Navigation = () => {
       </div>
       <div className={`${styles.mobileNavigation} ${showMobileNav ? styles.showMobileNav : ''}`}>
         <ul className={showMobileNav ? 'd-block' : 'd-none'}>
-          {navigationOptions.map(({ id, name }) => (
-            <li className={styles.mobileNavigationItem} key={id}>{name}</li>
+          {navigationOptions.map(({ id, name, to }) => (
+            <li className={styles.mobileNavigationItem} key={id}>
+              <Link onClick={() => toggleMobileNav(!showMobileNav)} smooth={true} duration={200} activeClass={styles.active} to={to} spy={true}>{name}</Link>
+            </li>
           ))}
         </ul>
       </div>

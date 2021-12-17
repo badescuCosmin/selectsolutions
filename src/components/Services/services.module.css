@@ -1,37 +1,27 @@
 .cardsHolder {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 300px;
   box-shadow: 0 2px 20px 0 rgba(15, 24, 38, 0.1);
-  height: 300px;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 50px;
+  padding: 50px 30px;
+  background-color: var(--white-color);
+  border-radius: 10px;
 }
 
-.cardTitle {
+.service {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.title {
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  font-weight: 400;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-color: var(--color-primary);
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
-.cardDescription {
-  padding: 10px 15px;
-  text-align: center;
-  line-height: 20px;
+.description {
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
 @media (max-width: 768px) {
