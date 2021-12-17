@@ -42,7 +42,7 @@ const Contact = () => {
       </div>
       <div className={styles.rootMessage}>
         <h2>Say Something</h2>
-        <Form target="_blank" action="https://formsubmit.co/test@mailinator.com" method="POST" >
+        <Form target="_blank" action="https://formsubmit.co/testiniocos@gmail.com" method="POST" >
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Name</Form.Label>
             <Form.Control name="name" type="text" placeholder="Full name" />
