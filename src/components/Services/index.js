@@ -57,7 +57,7 @@ const Services = () => {
           <div key={id} className={styles.service}
           >
             <div className="d-flex align-items-center">
-              <FontAwesomeIcon icon={faCertificate} color='#c69963' size='1x' />
+              <FontAwesomeIcon icon={faCertificate} color='#d1178d' size='1x' />
               <h4 className={styles.title}>{name}</h4>
             </div>
 

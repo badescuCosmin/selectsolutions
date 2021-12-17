@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './hero.module.css';
-
+import { Link } from 'react-scroll'
 
 const Hero = () => (
   <div className={styles.root}>
@@ -9,6 +9,7 @@ const Hero = () => (
         data-aos="fade-right"
         data-aos-once={true}
         data-aos-easing="ease-in">
+        {/* <span className="d-block"  >Service Limited</span> <br /> */}
         Best homes, offices renovations and construction solution</h2>
       <button
         type="button"
@@ -18,7 +19,7 @@ const Hero = () => (
         data-aos-easing="ease-in"
         className={styles.button}
       >
-        Contact us
+        <Link activeClass={styles.active} to='contact' spy={true}>Contact us</Link>
       </button>
     </div>
   </div>

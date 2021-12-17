@@ -1,13 +1,21 @@
 .root {
-  background-color: var(--color-secondary);
+  background-color: var(--color-navigation);
   color: var(--white-color);
-  height: 70px;
+  height: 80px;
   align-items: center;
   display: flex;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 1000;
   width: 100%;
+}
+
+.logo {
+  width: 70px;
+}
+
+.list {
+  align-items: center;
 }
 
 .navigationItem {
@@ -34,7 +42,7 @@
 }
 
 .mobileNavigation {
-  background-color: var(--color-secondary);
+  background-color: var(--color-navigation);
   height: 100%;
   position: fixed;
   z-index: 100;

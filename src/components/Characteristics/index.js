@@ -35,7 +35,7 @@ const Charactersitics = () => {
             data-aos-once={true}
             key={id}
           >
-            <FontAwesomeIcon icon={faCheckDouble} color='#c69963' size='2x' />
+            <FontAwesomeIcon icon={faCheckDouble} color='#d1178d' size='2x' />
             <p className={styles.cardTitle}>{name}</p>
           </div>
         ))}

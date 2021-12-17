@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect, useEffect } from 'react';
 import styles from './navigation.module.css';
 import { Link } from 'react-scroll'
+import Logo from '../../static/svg/logo.png';
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
@@ -49,8 +50,8 @@ const Navigation = () => {
     <>
       <div className={styles.root}>
         <nav className={`container d-flex justify-content-between px-4 ${styles.navigation}`}>
-          <span>Logo</span>
-          <ul className='d-flex m-0 d-none d-md-flex '>
+          <img src={Logo} alt='logo' className={styles.logo} />
+          <ul className={`d-flex m-0 d-none d-md-flex ${styles.list}`}>
             {navigationOptions.map(({ id, name, to }) => (
               <li className={styles.navigationItem} key={id}>
                 <Link activeClass={styles.active} to={to} spy={true}>{name}</Link>
@@ -58,12 +59,12 @@ const Navigation = () => {
             ))}
           </ul>
           {!showMobileNav
-            ? <div onClick={() => toggleMobileNav(!showMobileNav)} className='d-md-none'>
+            ? <div onClick={() => toggleMobileNav(!showMobileNav)} className='d-md-none mt-3'>
               <div className={styles.hamburgerLine}></div>
               <div className={styles.hamburgerLine}></div>
               <div className={styles.hamburgerLine}></div>
             </div>
-            : <span className={`d-md-none ${styles.cross}`} onClick={() => toggleMobileNav(!showMobileNav)}> &#9587;</span>
+            : <span className={`d-md-none mt-3 ${styles.cross}`} onClick={() => toggleMobileNav(!showMobileNav)}> &#9587;</span>
           }
         </nav>
       </div>

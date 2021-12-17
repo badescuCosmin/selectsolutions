@@ -1,5 +1,5 @@
 .root {
-  background-color: var(--color-secondary);
+  background-color: var(--color-navigation);
   color: var(--white-color);
 }
 
@@ -22,11 +22,22 @@
   cursor: pointer;
 }
 
+.logo {
+  width: 60px;
+}
+
 @media (max-width: 768px) {
+  .logo {
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+
   .description {
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
+    text-align: center;
   }
   .name,
   .tc {
