@@ -6,7 +6,7 @@
   margin: 0 10px;
   background-size: cover;
   margin-bottom: 20px;
-  box-shadow: 0 2px 20px 0 rgba(15, 24, 38, 0.1);
+  composes: box-shadow from '../../styles/common.module.css';
   border-radius: 5px;
   overflow: hidden;
 }
@@ -37,10 +37,17 @@
 
 .image6 {
   background-image: url('../../static/svg/gallery6.png');
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
   .wrapper {
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .additionalTitleStyles {
+    padding-top: 0;
   }
 }

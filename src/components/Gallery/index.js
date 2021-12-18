@@ -5,7 +5,7 @@ import Title from "../Title";
 const Gallery = () => {
   return (
     <div id="gallery" className={`container d-flex ${styles.wrapper}`}>
-      <Title title='Gallery' />
+      <Title title='Gallery' classNames={styles} />
       <div
         className='mx-5'
         data-aos="fade"

@@ -6,7 +6,7 @@ import Title from '../Title';
 const About = () => {
   return (
     <div id="about">
-      <Title title='About' />
+      <Title title='About' classNames={styles} />
       <div className={`container p-0 d-flex align-items-center flex-column  flex-md-row ${styles.root}`}>
         <img
           className='mx-5'

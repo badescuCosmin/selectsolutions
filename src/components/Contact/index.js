@@ -32,7 +32,7 @@ const Contact = () => {
   ]
   return (
     <div id='contact' className={styles.wrapper}>
-      <Title title='Contact' />
+      <Title title='Contact' classNames={styles} />
       <div className={`container mb-5 d-flex justify-content-between align-center ${styles.wrapper}`}>
         <div className={styles.rootContact}>
           <p className={styles.description}>Construction offer you the best in metal roofing services, supplies and materials to help protect one of your biggest investments you will ever make, your home.</p>
@@ -52,37 +52,37 @@ const Contact = () => {
             ? <form method="POST" action="https://formsubmit.co/testiniocos@gmail.com" enctype="multipart/form-data">
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Name</Form.Label>
-                <Form.Control required name="name" type="text" placeholder="Full name" />
+                <Form.Control required name="Customer name" type="text" placeholder="Full name" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control required name='email' type="email" placeholder="Enter email" />
+                <Form.Control required name='Customer email' type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Job title</Form.Label>
-                <Form.Control required name="job title" type="text" placeholder="Full name" />
+                <Form.Control name="Job title" type="text" placeholder="Full name" />
               </Form.Group>
               <Form.Group controlId="formFileSm" className="mb-3">
                 <Form.Label>Attach cv</Form.Label>
-                <Form.Control required type="file" name="attachment" accept="image/png, image/jpeg" />
+                <Form.Control required type="file" name="Customer Cv" accept="image/png, image/jpeg" />
               </Form.Group>
               <button
-                type="submite" className={styles.button}
+                type="submite" className={styles.button} p
               >
                 Contact us
               </button>
             </form>
-            : <form method="POST" action="https://formsubmit.co/testiniocos@gmail.com" enctype="multipart/form-data">
+            : <form method="POST" action="https://formsubmit.co/testiniocos@gmail.com">
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Name</Form.Label>
-                <Form.Control required name="name" type="text" placeholder="Full name" />
+                <Form.Label>Company name</Form.Label>
+                <Form.Control required name="Company name" type="text" placeholder="Full name" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control required name='email' type="email" placeholder="Enter email" />
+                <Form.Control required name='Company Email' type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
@@ -90,7 +90,7 @@ const Contact = () => {
               <Form.Group>
                 <Form.Label>Leave your message</Form.Label>
                 <Form.Control
-                  name="message"
+                  name="Company message"
                   as="textarea"
                   required
                   placeholder="Leave a comment here"

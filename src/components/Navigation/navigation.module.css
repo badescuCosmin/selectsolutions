@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+a.active {
+  color: var(--color-primary) !important;
+}
+
 .navigationItem {
   list-style: none;
   cursor: pointer;

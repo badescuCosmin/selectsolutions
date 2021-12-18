@@ -1,6 +1,5 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { fab } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-scroll'
 import styles from './footer.module.css';
 import Logo from '../../static/svg/logo.png';
 
@@ -8,16 +7,17 @@ const Footer = () => (
   <div className={styles.root}>
     <div className={`container ${styles.wrapper}`}>
       <img src={Logo} alt='logo' className={styles.logo} />
-      <h3 className={styles.name}>Services Limited</h3>
+      <h3 className={styles.name}>Select Solutions Services LTD</h3>
       <div className={styles.description}>
         <p>Best homes, offices renovations and construction solution</p>
         <ul className={styles.list}>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
+          <li><Link activeClass={styles.active} to='about' spy={true}>About</Link></li>
+          <li><Link activeClass={styles.active} to='services' spy={true}>Services</Link></li>
+          <li><Link activeClass={styles.active} to='gallery' spy={true}>Gallery</Link></li>
+          <li><Link activeClass={styles.active} to='contact' spy={true}>Contact</Link></li>
         </ul>
       </div>
-      <p className={styles.tc}>@2021 Services Limited</p>
+      <p className={styles.tc}>@2021 Select Solutions Services LTD</p>
     </div>
   </div>
 );

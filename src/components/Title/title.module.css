@@ -23,6 +23,6 @@
 
 @media (max-width: 576px) {
   .title {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 }

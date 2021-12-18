@@ -15,3 +15,13 @@
 .primary-button:hover {
   background-color: var(--color-primary-dark);
 }
+
+.box-shadow {
+  box-shadow: 0 2px 20px 0 rgba(15, 24, 38, 0.1);
+}
+
+@media (max-width: 576px) {
+  .box-shadow {
+    box-shadow: none;
+  }
+}

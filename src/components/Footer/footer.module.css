@@ -1,6 +1,7 @@
 .root {
   background-color: var(--color-navigation);
   color: var(--white-color);
+  padding: 0 20px;
 }
 
 .wrapper {
@@ -20,6 +21,11 @@
 .list li {
   margin-right: 15px;
   cursor: pointer;
+}
+
+a.active {
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 .logo {
