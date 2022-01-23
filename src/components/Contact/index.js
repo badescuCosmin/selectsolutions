@@ -51,23 +51,33 @@ const Contact = () => {
           {activeTab === 'individual'
             ? <form method="POST" action="https://formsubmit.co/testiniocos@gmail.com" enctype="multipart/form-data">
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Name</Form.Label>
+                <Form.Label>Full Name</Form.Label>
                 <Form.Control required name="Customer name" type="text" placeholder="Full name" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control required name='Customer email' type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>CSCS Card (color)</Form.Label>
+                <Form.Control required name="CSCS Card" type="text" placeholder="CSCS Card" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Job title </Form.Label>
-                <Form.Control name="Job title" type="text" placeholder="Full name" />
+                <Form.Label>Postecode</Form.Label>
+                <Form.Control required name="Postecode" type="text" placeholder="Postecode" />
               </Form.Group>
-              <Form.Group controlId="formFileSm" className="mb-3">
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Contact / WhatsApp</Form.Label>
+                <Form.Control required name="Contact/WhatsApp" type="text" placeholder="Contact / WhatsApp" />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Experience</Form.Label>
+                <Form.Control
+                  name="Experience"
+                  as="textarea"
+                  placeholder="Leave a comment here"
+                  style={{ height: '100px' }}
+                />
+              </Form.Group>
+              <Form.Group controlId="formFileSm" className="mb-3 mt-3">
                 <Form.Label>Attach cv</Form.Label>
-                <Form.Control required type="file" name="Customer Cv" accept="image/png, image/jpeg" />
+                <Form.Control type="file" name="Customer Cv" accept="image/png, image/jpeg" />
               </Form.Group>
               <button
                 type="submite" className={styles.button} p
