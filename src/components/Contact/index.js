@@ -62,7 +62,7 @@ const Contact = () => {
                 </Form.Text>
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Job title</Form.Label>
+                <Form.Label>Job title </Form.Label>
                 <Form.Control name="Job title" type="text" placeholder="Full name" />
               </Form.Group>
               <Form.Group controlId="formFileSm" className="mb-3">
