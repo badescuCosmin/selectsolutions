@@ -49,7 +49,7 @@ const Contact = () => {
             <span onClick={() => setActiveTab('company')} className={`${styles.company} ${activeTab === 'company' && styles.active}`}>Company</span>
           </div>
           {activeTab === 'individual'
-            ? <form method="POST" action="https://formsubmit.co/testiniocos@gmail.com" enctype="multipart/form-data">
+            ? <form method="POST" action="https://formsubmit.co/selectsolutionsservicesuk@gmail.com" enctype="multipart/form-data">
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control required name="Customer name" type="text" placeholder="Full name" />
